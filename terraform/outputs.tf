@@ -3,7 +3,7 @@ output "load_balancer_url" {
 }
 
 output "load_balancer_id" {
-  value = "${layer0_load_balalncer.redis.id}"
+  value = "${layer0_load_balancer.redis.id}"
 }
 
 output "service_id" {
