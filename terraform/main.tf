@@ -8,6 +8,10 @@ resource "layer0_load_balancer" "redis" {
     container_port = "${var.port}"
     protocol       = "tcp"
   }
+
+  health_check {
+      target = "tcp:6379"
+  }
 }
 
 resource "layer0_service" "redis" {
