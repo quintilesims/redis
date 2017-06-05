@@ -17,7 +17,7 @@ resource "layer0_load_balancer" "redis" {
 resource "layer0_service" "redis" {
   name          = "${var.service_name}"
   environment   = "${var.environment_id}"
-  deploy        = "${ var.deploy_id == "" ? layer0_deploy.redis.id : var.deploy_id }"
+  deploy        = "${ var.deploy_id == "" ? format("%s", layer0_deploy.redis.id) : var.deploy_id }"
   load_balancer = "${layer0_load_balancer.redis.id}"
   scale         = "${var.scale}"
   wait          = true
