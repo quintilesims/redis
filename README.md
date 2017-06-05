@@ -5,5 +5,5 @@
 
 # Troubleshooting
 
-Please get in touch in #xfra on Slack for any issues, or send an email to [carbon@us.imshealth.com](mailto:carbon@us.imshealth.com).
+Please send an email to [carbon@us.imshealth.com](mailto:carbon@us.imshealth.com) with any issues.
 
