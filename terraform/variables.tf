@@ -33,6 +33,6 @@ variable "scale" {
 }
 
 variable "private" {
-  description = "(bool) Whether the Redis load balancer should be private"
+  description = "Whether the Redis load balancer should be private"
   default     = true
 }

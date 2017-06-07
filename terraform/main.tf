@@ -1,7 +1,7 @@
 resource "layer0_load_balancer" "redis" {
   name        = "${var.load_balancer_name}"
   environment = "${var.environment_id}"
-  private     = true
+  private     = "${var.private}"
 
   port {
     host_port      = "${var.port}"
@@ -10,7 +10,7 @@ resource "layer0_load_balancer" "redis" {
   }
 
   health_check {
-      target = "tcp:6379"
+    target = "tcp:6379"
   }
 }
 
