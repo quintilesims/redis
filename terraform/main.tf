@@ -20,7 +20,6 @@ resource "layer0_service" "redis" {
   deploy        = "${ var.deploy_id == "" ? format("%s", layer0_deploy.redis.id) : var.deploy_id }"
   load_balancer = "${layer0_load_balancer.redis.id}"
   scale         = "${var.scale}"
-  wait          = true
 }
 
 resource "layer0_deploy" "redis" {
